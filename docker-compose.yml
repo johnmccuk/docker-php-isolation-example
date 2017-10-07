@@ -7,9 +7,6 @@ services:
         volumes:
             - ./webroot:/var/www/html
             - ./site.conf:/etc/nginx/conf.d/site.conf
-        depends_on:
-            - php7
-            - php5
         links:
             - php7
             - php5
